@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+list-style: none;
+}
+
+body{
+    background: url(./img/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.search_boxes{
+    width: 100%;
+}
+
+.card-weather{
+    width: 100%;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.box .list-box{
+    font-style: 22px;
+}
+
+.or-box{
+    height: 50px;
+    border: 2px solid white;
+margin-left: 20px;
+}
+
+.degree{
+font-size: 66px;
+padding-left: 20px;
+}
+
+input{
+    padding: 10px 85px 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6x;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: white;
+}
+
+input::placeholder{
+color: white;
+}
+
+input:focus{
+    backdrop-filter: blur(4px);
+    background: rgba(155, 138, 138, 0.4);
+    transition: .3s;
+
+}
+
+.btn_search{
+    margin-top: -2px;
+    margin-left: 20px;
+    padding: 10px 30px;
+    border-radius: 0 6px 6px 0;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6x;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    backdrop-filter: blur(4px);
+    color: white;
+    border: none;
+}
+
+.btn_search:hover{
+    backdrop-filter: blur(4px);
+    background: rgba(155, 138, 138, 0.4);
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
+@media(max-width:575px){
+    input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 9px 2px 10px 10px;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6x;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        color: white;
+    }
+
+    .btn_search{
+        width: 100%;
+        margin-top: -2px;
+        margin-left: 18px;
+        padding: 10px 11px;
+        border-radius: 0 6px 6px 0;
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-border-radius: 6px;
+        backdrop-filter: blur(4px);
+        color: white;
+        border: none;
+        margin: 0;
+    }
+}
